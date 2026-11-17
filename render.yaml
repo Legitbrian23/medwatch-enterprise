@@ -33,9 +33,6 @@ services:
         destination: /index.html
     envVars:
       - key: VITE_API_BASE_URL
-        fromService:
-          type: web
-          name: medwatch-api
-          property: host
+        value: https://medwatch-api-f0fv.onrender.com
       - key: VITE_DEMO_MODE
         value: "true"
