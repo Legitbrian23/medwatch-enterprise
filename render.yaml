@@ -22,8 +22,9 @@ services:
         value: 7d
 
   # Frontend Web Static Site
-  - type: static
+  - type: web
     name: medwatch-web
+    env: static
     buildCommand: npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @medwatch/shared build && pnpm --filter @medwatch/web build
     staticPublishPath: ./apps/web/dist
     routes:
