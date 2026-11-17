@@ -175,7 +175,6 @@ medwatch/
 ├── docs/
 │   ├── mongosh/               q7.1.js – q7.6.js (verbatim PDF queries)
 │   └── migration/             ObjectId migration guide
-├── .kiro/specs/medwatch/      requirements.md, design.md, design-system.md, tasks.md
 ├── docker-compose.yml
 ├── .env.example
 └── .github/workflows/ci.yml   lint → typecheck → test
